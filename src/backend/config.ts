@@ -14,6 +14,11 @@ export default function getConfig() {
     homepageUrl: process.env.HOMEPAGE_URL ?? 'https://vatsim-germany.org/api',
     homepageKey: process.env.HOMEPAGE_KEY ?? '',
 
+    frontendSettings: {
+      vatsimAuthUrl: options.vatsimAuthUrl,
+      vatsimAuthClientId: options.vatsimAuthClientId,
+    },
+
     vatsimAuthUrl: options.vatsimAuthUrl,
     clientId: options.vatsimAuthClientId,
     clientSecret: process.env.CLIENT_SECRET ?? '',
